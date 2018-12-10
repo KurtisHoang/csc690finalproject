@@ -1,6 +1,10 @@
 //
 //  ViewController.swift
 //  CSC690Final
+//
+//  Created by Kurtis Hoang on 12/9/18.
+//  Copyright © 2018 Kurtis Hoang. All rights reserved.
+//
 
 import UIKit
 
@@ -19,6 +23,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //load UserDefaults here to get all saved info
         
     }
     
@@ -42,6 +48,7 @@ class LoginViewController: UIViewController {
                 //check account name to be the same
                 if(accounts[i].username == usernameField.text && accounts[i].password == passwordField.text)
                 {
+                    //set currAccount to be the main account
                     currAccount = Accounts(newUsername: accounts[i].username, newPassword: accounts[i].password)
                     //move to profile view through segue
                     performSegue(withIdentifier: "loginSegue", sender: self)
@@ -55,8 +62,10 @@ class LoginViewController: UIViewController {
                 //creating an alert box
                 let alert = UIAlertController(title: "Error", message: "There is no matching username or password.", preferredStyle: .alert)
                 
+                //okay button
                 let okayButton = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
                 
+                //add the okay button to alert
                 alert.addAction(okayButton)
                 self.present(alert, animated: true, completion:  nil)
             }
@@ -66,8 +75,10 @@ class LoginViewController: UIViewController {
             //creating an alert box
             let alert = UIAlertController(title: "Error", message: "There are no accounts in the System", preferredStyle: .alert)
             
+            //okay button
             let okayButton = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
             
+            //add the okay button to alert
             alert.addAction(okayButton)
             self.present(alert, animated: true, completion:  nil)
         }
@@ -83,7 +94,18 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "loginSegue")
         {
-            //pass currAccount to profile view
+            //pass data from currAccount to profile view
+            if let destination = segue.destination as? profileViewController {
+                destination.account = currAccount
+            }
+        }
+        
+        if(segue.identifier == "signupSegue")
+        {
+            //pass data from accounts to Signup view
+            if let destination = segue.destination as? SignupViewController {
+                destination.accounts = accounts
+            }
         }
     }
     
