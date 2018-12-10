@@ -5,6 +5,7 @@
 //  Created by Kurtis Hoang on 12/9/18.
 //  Copyright © 2018 Kurtis Hoang. All rights reserved.
 //
+
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -36,6 +37,8 @@ class LoginViewController: UIViewController {
     
     //when log in button is pressed
     @IBAction func LoginButtonPressed(_ sender: Any) {
+        //find match
+        var noMatch: Bool = false
         //if accounts is not empty
         if(accounts.count != 0){
             //for loop to check all the accounts that have been created
@@ -47,13 +50,37 @@ class LoginViewController: UIViewController {
                     //move to profile view through segue
                     performSegue(withIdentifier: "loginSegue", sender: self)
                 }
+                //no matches
+                noMatch = true
             }
+            
+            if noMatch == true
+            {
+                //creating an alert box
+                let alert = UIAlertController(title: "Error", message: "There is no matching username or password.", preferredStyle: .alert)
+                
+                let okayButton = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+                
+                alert.addAction(okayButton)
+                self.present(alert, animated: true, completion:  nil)
+            }
+        }
+        else
+        {
+            //creating an alert box
+            let alert = UIAlertController(title: "Error", message: "There are no accounts in the System", preferredStyle: .alert)
+            
+            let okayButton = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+            
+            alert.addAction(okayButton)
+            self.present(alert, animated: true, completion:  nil)
         }
     }
     
     //when sign up button is pressed
     @IBAction func SignupButtonPressed(_ sender: Any) {
-        
+        //move to sign up view through segue
+        performSegue(withIdentifier: "signupSegue", sender: self)
     }
     
     //send stuff to other views
