@@ -14,6 +14,7 @@
 		E9A4577821BDFAFD005E55AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A4577621BDFAFD005E55AF /* LaunchScreen.storyboard */; };
 		E9A4578321BDFAFE005E55AF /* CSC690FinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4578221BDFAFE005E55AF /* CSC690FinalTests.swift */; };
 		E9A4578E21BDFAFE005E55AF /* CSC690FinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4578D21BDFAFE005E55AF /* CSC690FinalUITests.swift */; };
+		E9A4579E21BE0C8A005E55AF /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4579D21BE0C8A005E55AF /* Accounts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E9A4578921BDFAFE005E55AF /* CSC690FinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSC690FinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A4578D21BDFAFE005E55AF /* CSC690FinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC690FinalUITests.swift; sourceTree = "<group>"; };
 		E9A4578F21BDFAFE005E55AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A4579D21BE0C8A005E55AF /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				E9A4576D21BDFAFD005E55AF /* AppDelegate.swift */,
 				E9A4576F21BDFAFD005E55AF /* LoginViewController.swift */,
+				E9A4579D21BE0C8A005E55AF /* Accounts.swift */,
 				E9A4577121BDFAFD005E55AF /* Main.storyboard */,
 				E9A4577421BDFAFD005E55AF /* Assets.xcassets */,
 				E9A4577621BDFAFD005E55AF /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				E9A4577021BDFAFD005E55AF /* LoginViewController.swift in Sources */,
 				E9A4576E21BDFAFD005E55AF /* AppDelegate.swift in Sources */,
+				E9A4579E21BE0C8A005E55AF /* Accounts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
