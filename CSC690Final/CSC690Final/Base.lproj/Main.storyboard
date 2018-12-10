@@ -59,7 +59,6 @@
                                 <state key="normal" title="Log in"/>
                                 <connections>
                                     <action selector="LoginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H46-mR-xyB"/>
-                                    <segue destination="ZwF-6b-uQs" kind="show" id="lXF-Z1-N3I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awe-GC-Gyi">
@@ -68,7 +67,6 @@
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="SignupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSU-ig-pCc"/>
-                                    <segue destination="KnN-nY-0xU" kind="show" id="i47-wp-xqU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,6 +76,8 @@
                     <connections>
                         <outlet property="passwordField" destination="7Ls-NI-YF8" id="y3T-eG-0kh"/>
                         <outlet property="usernameField" destination="PR6-1b-QDf" id="xzh-WL-P4O"/>
+                        <segue destination="ZwF-6b-uQs" kind="show" identifier="loginSegue" id="0lk-cN-zBc"/>
+                        <segue destination="KnN-nY-0xU" kind="show" id="dnW-Jl-Zo0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
