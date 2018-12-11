@@ -17,6 +17,7 @@
 		E9A4579E21BE0C8A005E55AF /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4579D21BE0C8A005E55AF /* Accounts.swift */; };
 		E9A457A021BE2DF2005E55AF /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4579F21BE2DF2005E55AF /* SignupViewController.swift */; };
 		E9A457A221BE2FA8005E55AF /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A457A121BE2FA8005E55AF /* profileViewController.swift */; };
+		E9A457A421BF033D005E55AF /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A457A321BF033D005E55AF /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E9A4579D21BE0C8A005E55AF /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		E9A4579F21BE2DF2005E55AF /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E9A457A121BE2FA8005E55AF /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		E9A457A321BF033D005E55AF /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				E9A4579D21BE0C8A005E55AF /* Accounts.swift */,
 				E9A4579F21BE2DF2005E55AF /* SignupViewController.swift */,
 				E9A457A121BE2FA8005E55AF /* profileViewController.swift */,
+				E9A457A321BF033D005E55AF /* EditViewController.swift */,
 				E9A4577121BDFAFD005E55AF /* Main.storyboard */,
 				E9A4577421BDFAFD005E55AF /* Assets.xcassets */,
 				E9A4577621BDFAFD005E55AF /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				E9A4577021BDFAFD005E55AF /* LoginViewController.swift in Sources */,
 				E9A4576E21BDFAFD005E55AF /* AppDelegate.swift in Sources */,
+				E9A457A421BF033D005E55AF /* EditViewController.swift in Sources */,
 				E9A457A021BE2DF2005E55AF /* SignupViewController.swift in Sources */,
 				E9A457A221BE2FA8005E55AF /* profileViewController.swift in Sources */,
 				E9A4579E21BE0C8A005E55AF /* Accounts.swift in Sources */,

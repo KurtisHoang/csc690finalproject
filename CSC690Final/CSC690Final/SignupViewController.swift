@@ -37,6 +37,42 @@ class SignupViewController: UIViewController {
             }
         }
         
+        //if username textField is empty
+        if(usernameField.text == "")
+        {
+            //creating an alert box
+            let alert = UIAlertController(title: "Error", message: "Please input a username!", preferredStyle: .alert)
+            
+            let okayButton = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+            
+            alert.addAction(okayButton)
+            self.present(alert, animated: true, completion:  nil)
+        }
+        
+        //if password textField is empty
+        if(passwordField.text == "")
+        {
+            //creating an alert box
+            let alert = UIAlertController(title: "Error", message: "Please input a password!", preferredStyle: .alert)
+            
+            let okayButton = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+            
+            alert.addAction(okayButton)
+            self.present(alert, animated: true, completion:  nil)
+        }
+        
+        //if password is too short //minimum 5 characters
+        if(passwordField.text!.count < 5)
+        {
+            //creating an alert box
+            let alert = UIAlertController(title: "Error", message: "Password is too short! Please input a password that is has at least 5 characters.", preferredStyle: .alert)
+            
+            let okayButton = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+            
+            alert.addAction(okayButton)
+            self.present(alert, animated: true, completion:  nil)
+        }
+        
         //save username and password here using UserDefaults
         
         //move to profile view through segue
