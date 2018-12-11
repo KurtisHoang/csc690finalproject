@@ -25,12 +25,15 @@ class profileViewController: UIViewController, UIImagePickerControllerDelegate,U
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //set label to username
+        //set label to account username
         usernameLabel.text = account?.username
         
-        //descriptionLabel numberOfRow is 0 shown in the attribute inspector
-        //add text to descriptionLabel
-        descriptionLabel.text = descriptionLabel.text! + "This is the default description for your account. You can change this description by pressing the edit button."
+        //set image to account image
+        imageView.image = account?.image
+        
+        //add account description
+        descriptionLabel.text = descriptionLabel.text! + (account?.description)!
+
         //fit the descriptionLabel's size
         descriptionLabel.sizeToFit()
     }
@@ -49,7 +52,9 @@ class profileViewController: UIViewController, UIImagePickerControllerDelegate,U
         
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         {
+            //add to account's image
             //set imageView's image to the chosen image
+            account?.addImage(newImage: image)
             imageView.image = image
         }
         //dismiss the photo library after chosen an image
@@ -63,6 +68,16 @@ class profileViewController: UIViewController, UIImagePickerControllerDelegate,U
     
     //when view pets button is pressed
     @IBAction func viewpetsButtonPressed(_ sender: Any) {
-        
+        performSegue(withIdentifier: "viewpetsSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "editSegue")
+        {
+            //pass data from currAccount to edit view
+            if let destination = segue.destination as? EditViewController {
+                destination.account = account
+            }
+        }
     }
 }
