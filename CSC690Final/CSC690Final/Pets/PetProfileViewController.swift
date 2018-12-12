@@ -10,4 +10,5 @@ import UIKit
 
 class PetProfileViewController: UIViewController {
     
+    var account: Accounts?
 }
