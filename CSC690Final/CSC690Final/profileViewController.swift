@@ -31,6 +31,9 @@ class profileViewController: UIViewController, UIImagePickerControllerDelegate,U
         //set image to account image
         imageView.image = account?.image
         
+        //add name
+        nameLabel.text = nameLabel.text! + (account?.name)!
+        
         //add account description
         descriptionLabel.text = descriptionLabel.text! + (account?.description)!
 
@@ -76,6 +79,14 @@ class profileViewController: UIViewController, UIImagePickerControllerDelegate,U
         {
             //pass data from currAccount to edit view
             if let destination = segue.destination as? EditViewController {
+                destination.account = account
+            }
+        }
+        
+        if(segue.identifier == "viewpetsSegue")
+        {
+            //pass data from currAccount to edit view
+            if let destination = segue.destination as? PetTableViewController {
                 destination.account = account
             }
         }

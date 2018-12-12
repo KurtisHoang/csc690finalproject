@@ -18,6 +18,13 @@
 		E9A457A021BE2DF2005E55AF /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4579F21BE2DF2005E55AF /* SignupViewController.swift */; };
 		E9A457A221BE2FA8005E55AF /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A457A121BE2FA8005E55AF /* profileViewController.swift */; };
 		E9A457A421BF033D005E55AF /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A457A321BF033D005E55AF /* EditViewController.swift */; };
+		E9C9A9DE21C079D100DF74D2 /* PetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9DD21C079D100DF74D2 /* PetTableViewController.swift */; };
+		E9C9A9E021C0924600DF74D2 /* PetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9DF21C0924600DF74D2 /* PetCell.swift */; };
+		E9C9A9E221C0926E00DF74D2 /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9E121C0926E00DF74D2 /* Pets.swift */; };
+		E9C9A9E421C0A2FC00DF74D2 /* PetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9E321C0A2FC00DF74D2 /* PetProfileViewController.swift */; };
+		E9C9A9E821C0A4AE00DF74D2 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9E721C0A4AE00DF74D2 /* MessageViewController.swift */; };
+		E9C9A9EA21C0A4B800DF74D2 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9E921C0A4B800DF74D2 /* MessageCell.swift */; };
+		E9C9A9EC21C0A4C200DF74D2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9EB21C0A4C200DF74D2 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		E9A4579F21BE2DF2005E55AF /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E9A457A121BE2FA8005E55AF /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		E9A457A321BF033D005E55AF /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		E9C9A9DD21C079D100DF74D2 /* PetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewController.swift; sourceTree = "<group>"; };
+		E9C9A9DF21C0924600DF74D2 /* PetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCell.swift; sourceTree = "<group>"; };
+		E9C9A9E121C0926E00DF74D2 /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
+		E9C9A9E321C0A2FC00DF74D2 /* PetProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProfileViewController.swift; sourceTree = "<group>"; };
+		E9C9A9E721C0A4AE00DF74D2 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		E9C9A9E921C0A4B800DF74D2 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		E9C9A9EB21C0A4C200DF74D2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +125,8 @@
 				E9A4579F21BE2DF2005E55AF /* SignupViewController.swift */,
 				E9A457A121BE2FA8005E55AF /* profileViewController.swift */,
 				E9A457A321BF033D005E55AF /* EditViewController.swift */,
+				E9C9A9E521C0A42A00DF74D2 /* Pets */,
+				E9C9A9E621C0A44900DF74D2 /* Messages */,
 				E9A4577121BDFAFD005E55AF /* Main.storyboard */,
 				E9A4577421BDFAFD005E55AF /* Assets.xcassets */,
 				E9A4577621BDFAFD005E55AF /* LaunchScreen.storyboard */,
@@ -135,6 +151,27 @@
 				E9A4578F21BDFAFE005E55AF /* Info.plist */,
 			);
 			path = CSC690FinalUITests;
+			sourceTree = "<group>";
+		};
+		E9C9A9E521C0A42A00DF74D2 /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9A9DD21C079D100DF74D2 /* PetTableViewController.swift */,
+				E9C9A9DF21C0924600DF74D2 /* PetCell.swift */,
+				E9C9A9E121C0926E00DF74D2 /* Pets.swift */,
+				E9C9A9E321C0A2FC00DF74D2 /* PetProfileViewController.swift */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
+		E9C9A9E621C0A44900DF74D2 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9A9E721C0A4AE00DF74D2 /* MessageViewController.swift */,
+				E9C9A9EB21C0A4C200DF74D2 /* Message.swift */,
+				E9C9A9E921C0A4B800DF74D2 /* MessageCell.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +306,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A4577021BDFAFD005E55AF /* LoginViewController.swift in Sources */,
+				E9C9A9E021C0924600DF74D2 /* PetCell.swift in Sources */,
+				E9C9A9E221C0926E00DF74D2 /* Pets.swift in Sources */,
 				E9A4576E21BDFAFD005E55AF /* AppDelegate.swift in Sources */,
 				E9A457A421BF033D005E55AF /* EditViewController.swift in Sources */,
+				E9C9A9EA21C0A4B800DF74D2 /* MessageCell.swift in Sources */,
 				E9A457A021BE2DF2005E55AF /* SignupViewController.swift in Sources */,
+				E9C9A9E421C0A2FC00DF74D2 /* PetProfileViewController.swift in Sources */,
+				E9C9A9E821C0A4AE00DF74D2 /* MessageViewController.swift in Sources */,
+				E9C9A9EC21C0A4C200DF74D2 /* Message.swift in Sources */,
 				E9A457A221BE2FA8005E55AF /* profileViewController.swift in Sources */,
 				E9A4579E21BE0C8A005E55AF /* Accounts.swift in Sources */,
+				E9C9A9DE21C079D100DF74D2 /* PetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
