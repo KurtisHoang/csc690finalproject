@@ -1,10 +1,7 @@
 //
 //  EditViewController.swift
 //  CSC690Final
-//
-//  Created by Kurtis Hoang on 12/10/18.
-//  Copyright © 2018 Kurtis Hoang. All rights reserved.
-//
+
 
 import UIKit
 
