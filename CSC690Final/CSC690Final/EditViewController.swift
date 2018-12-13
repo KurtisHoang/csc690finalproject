@@ -64,7 +64,22 @@ class EditViewController: UIViewController, UITextViewDelegate {
         {
             currDescription = "This is the default description for your account. You can change this description by pressing the edit button."
         }
-        account?.addDescription(newDescription: currDescription!)
+        
+        //error is description is greater than 296 characters
+        if((currDescription?.count)! > 296)
+        {
+            //creating an alert box
+            let alert = UIAlertController(title: "Error", message: "Description is too long!", preferredStyle: .alert)
+            
+            let okayButton = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+            
+            alert.addAction(okayButton)
+            self.present(alert, animated: true, completion:  nil)
+        }
+        else{
+            account?.addDescription(newDescription: currDescription!)
+        }
+        
         performSegue(withIdentifier: "applySegue", sender: self)
     }
     
