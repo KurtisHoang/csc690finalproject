@@ -17,7 +17,7 @@ class PetTableViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //initialize random pets
-        for _ in 0..<petSize
+        for i in 0..<petSize
         {
             //randomize animal, dogbreed, catbreed
             let randAnimal = Int.random(in: 0..<2)
@@ -76,6 +76,7 @@ class PetTableViewController: UITableViewController {
         //add to cell
         cell.animalLabel.text! = currPet.animal
         cell.breedLabel.text! = currPet.breed
+        cell.setIcon()
         
         return cell
     }

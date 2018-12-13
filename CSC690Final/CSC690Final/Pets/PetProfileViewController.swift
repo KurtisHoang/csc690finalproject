@@ -22,6 +22,7 @@ class PetProfileViewController: UIViewController {
         //initialize everything
         animalLabel.text = animal?.animal
         breedLabel.text = animal?.breed
+        image.image = UIImage(named: (animal?.breed)!)
         
         //check if dog or cat the set up a generic description
         if(animalLabel.text == "Dog")
@@ -63,6 +64,7 @@ class PetProfileViewController: UIViewController {
             {
                 destination.account = account
                 destination.messageList = messageList
+                destination.animal = animal
             }
         }
     }
