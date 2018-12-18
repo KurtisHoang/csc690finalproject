@@ -1,5 +1,10 @@
 csc690
 
+TEAM:
+Athena Javier
+Kurtis
+Alyssa
+
 Final Project: TenderPets App
 
 Proposal
