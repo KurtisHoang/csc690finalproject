@@ -3,7 +3,7 @@ csc690
 TEAM:
 Athena Javier
 Kurtis
-Alyssa
+Alyssa Malunao
 
 Final Project: TenderPets App
 
